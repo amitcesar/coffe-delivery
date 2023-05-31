@@ -13,7 +13,7 @@ export function Header() {
       <div className="container">
         <img src={coffeLogo} alt="" />
         <HeaderButtonsContainer>
-          <HeaderButton>
+          <HeaderButton variant="purple">
             <MapPin size={20} weight="fill" />
             Recife, PE
           </HeaderButton>
