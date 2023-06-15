@@ -16,7 +16,7 @@ body {
 }
 
 body, input, textarea, button {
-  font-family:  ${({theme}) => theme.fonts.title};
+  font-family:  ${({theme}) => theme.fonts.regular};
   font-size:  ${({theme}) => theme.textSizes['text-regular-m']};
   font-weight: 400;
 
