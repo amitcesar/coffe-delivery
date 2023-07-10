@@ -5,7 +5,6 @@ import {
   HeaderContainer,
 } from "./styles";
 import coffeLogo from "../../assets/coffee-delivery-logo.svg";
-import { NavLink } from "react-router-dom";
 
 export function Header() {
   return (
