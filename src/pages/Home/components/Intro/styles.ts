@@ -22,10 +22,15 @@ export const IntroContent = styled.div`
 `;
 
 export const IntroTitle = styled(TitleText)`
-
   margin-bottom: 1rem;
-  border: solid 1px;
-  border-color: red;
+`;
+
+export const IntroItems = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1.25rem;
+  margin-top: 4.125rem
 
 `;
 
