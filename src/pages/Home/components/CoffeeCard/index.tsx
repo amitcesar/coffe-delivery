@@ -13,26 +13,40 @@ import {
   TitleText,
 } from "../../../../components/Header/Typography";
 import { QuantityInput } from "../../../../components/QuantityInput";
+import { formatMoney } from "../../../../utils/formatMoney";
 
-export function CoffeeCard() {
+export interface Coffee {
+  id: number;
+  tags: string[];
+  name: string;
+  description: string;
+  photo: string;
+  price: number;
+}
+
+interface CoffeProps {
+  coffee: Coffee;
+}
+
+export function CoffeeCard({ coffee }: CoffeProps) {
+  const formatedPrice = formatMoney(coffee.price);
   return (
     <CoffeeCardConteiner>
-      <img src={CoffeItem} />
+      <img src={`/coffees/${coffee.photo}`} />
       <Tags>
-        <span>Tradicional</span>
-        <span>gelado</span>
+        {coffee.tags.map((tag) => (
+          <span key={`${coffee.id}${tag}`}>{tag}</span>
+        ))}
       </Tags>
 
-      <CoffeeName>Expresso Cremoso</CoffeeName>
-      <CoffeeDescription>
-        Café expresso tradicional com espuma cremosa
-      </CoffeeDescription>
+      <CoffeeName>{coffee.name}</CoffeeName>
+      <CoffeeDescription>{coffee.description}</CoffeeDescription>
 
       <CoffeCardFooter>
         <div>
           <RegularText size="s">R$</RegularText>
           <TitleText size="m" color="text" as="strong">
-            9,99
+            {formatedPrice}
           </TitleText>
         </div>
         <AddCartWrapper>

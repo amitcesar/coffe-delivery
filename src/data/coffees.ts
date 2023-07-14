@@ -5,7 +5,7 @@ export const coffees = [
     name: "Expresso Tradicional",
     description: "O tradicional café feito com água quente e grãos moídos",
     photo: "tradicional.png",
-    price: 9.9,
+    price: 2.9,
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const coffees = [
     name: "Expresso Americano",
     description: "Expresso diluído, menos intenso que o tradicional",
     photo: "americano.png",
-    price: 9.9,
+    price: 12.9,
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const coffees = [
     name: "Expresso Cremoso",
     description: "Café expresso tradicional com espuma cremosa",
     photo: "cremoso.png",
-    price: 9.9,
+    price: 9.99,
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const coffees = [
     name: "Expresso Gelado",
     description: "Bebida preparada com café expresso e cubos de gelo",
     photo: "gelado.png",
-    price: 9.9,
+    price: 5.9,
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export const coffees = [
     name: "Café com Leite",
     description: "Meio a meio de expresso tradicional com leite vaporizado",
     photo: "leite.png",
-    price: 9.9,
+    price: 4.9,
   },
   {
     id: 6,
@@ -46,7 +46,7 @@ export const coffees = [
     description:
       "Uma dose de café expresso com o dobro de leite e espuma cremosa",
     photo: "latte.png",
-    price: 9.9,
+    price: 6.9,
   },
   {
     id: 7,
