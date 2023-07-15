@@ -7,7 +7,5 @@ export const LayoutContainer = styled.div`
     height: calc(100vh - 10rem);
     margin-right: auto;
     margin-left: auto;
-    
-   
   }
 `
