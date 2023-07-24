@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+export const InputWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  position: relative;
+
+  > p {
+    color: ${({theme}) => theme.colors["base-hover"]}
+  }
+`;
 
 export const InputStyleContainer = styled.input`
   height: 2.625rem;
